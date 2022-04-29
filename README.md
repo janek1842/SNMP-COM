@@ -1,4 +1,4 @@
-# SNMP-COM
+# SNMP-COM CONCEPT
 
 Predicted implementation of the following SNMP features 
 
