@@ -7,8 +7,8 @@ int main()
  struct utsname buf;
  ret = uname(&buf);
  if(!ret) {
-  printf("OperatingSystem name: %s\n",buf.sysname);
-  printf("Node(Host) name: %s\n",buf.nodename);
+  char sysName[] = buf.sysname;
+  char nodeName[] = buf.nodename;
   printf("Kernel Release Version: %s\n",buf.release);
   printf("OS Version: %s\n",buf.version);
   printf("Hardware: %s\n",buf.machine);
