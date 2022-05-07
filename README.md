@@ -1,8 +1,10 @@
 # SNMP-COM CONCEPT
-
-Predicted implementation of the following SNMP features in client-server architecture 
+ The concept of this project assumes creating client-server app that would work like SNMP agent-manager.
+ 
+ Please note, this is only imitation of SNMP :) 
 
 ## SNMP Client and Server
+Predicted implementation of the following SNMP features in client-server architecture
 - MIB Implementation on server
 
 root-iso(1)-org(3)-dod(6)-internet(1)-mgmt(2)-mib(1):
