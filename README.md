@@ -1,7 +1,25 @@
-# SNMP-COM CONCEPT
+# SNMP-COM
 Very simple client-server app for observing basic SNMP operations (GET, GET NEXT, GET BULK) 
- 
 
+## How to run ? 
+- Clone the repository
+  - git clone https://github.com/janek1842/SNMP-COM.git
+  - Code was tested positively on Ubuntu 
+
+- Server
+```
+cd SNMP-COM
+cd server
+sudo gcc daytimeudpsrvv6.c
+sudo ./a.out
+```
+- Client
+```
+cd SNMP-COM
+cd client
+sudo gcc daytimeudpcliv6.c
+sudo ./a.out <server ipv6 address>
+```
 
 ## SNMP Client and Server
 Predicted implementation of the following SNMP features in client-server architecture
@@ -21,23 +39,24 @@ root-iso(1)-org(3)-dod(6)-internet(1)-mgmt(2)-mib(1):
 - GET OID
 - SET OID
 - GET
-- GETNEXT
-- GETBULK
+- GET NEXT
+- GET BULK
 
 ## Simple DEMO :)
-
-Client
+### Client
 - GET OID 
-![image](https://user-images.githubusercontent.com/56030577/168314790-c19b7c63-9675-4b0d-93a6-511abe1361f9.png)
+<img src="https://user-images.githubusercontent.com/56030577/168314790-c19b7c63-9675-4b0d-93a6-511abe1361f9.png" width="700" height="800" align="center"> 
+
 
 - GET NEXT
-![image](https://user-images.githubusercontent.com/56030577/168314960-1fd95aec-261d-481b-8ff9-6382ccafd232.png)
+<img src="https://user-images.githubusercontent.com/56030577/168314960-1fd95aec-261d-481b-8ff9-6382ccafd232.png" width="700" height="800" align="center">
 
 - GET BULK
-![image](https://user-images.githubusercontent.com/56030577/168315165-a4737bf5-fcf2-410e-8870-de33840e368b.png)
+<img src="https://user-images.githubusercontent.com/56030577/168315165-a4737bf5-fcf2-410e-8870-de33840e368b.png" width="700" height="800" align="center">
 
-Server
-![image](https://user-images.githubusercontent.com/56030577/168315271-ebc95f0c-c507-4f7c-b952-2ca374f4dddc.png)
+### Server
+
+<img src="https://user-images.githubusercontent.com/56030577/168315271-ebc95f0c-c507-4f7c-b952-2ca374f4dddc.png" width="700" height="800" align="center">
 
 
 
